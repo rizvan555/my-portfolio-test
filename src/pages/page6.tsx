@@ -29,9 +29,9 @@ function Page6() {
         </h2>
       </header>
       <main className="flex flex-col justify-center items-center gap-10 mb-20">
-        {experiances.map((experiance) => {
+        {experiances.map((experiance, index) => {
           return (
-            <div className=" w-[60vw]">
+            <div key={index} className=" w-[60vw]">
               <h2 className="border-t-2 pt-8 text-4xl mb-4 font-serif">
                 {experiance.uniName}
               </h2>

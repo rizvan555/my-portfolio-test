@@ -36,9 +36,9 @@ function Page4() {
         </h2>
       </header>
       <main className="flex flex-col justify-center items-center gap-10">
-        {experiances.map((experiance) => {
+        {experiances.map((experiance, index) => {
           return (
-            <div className=" w-[60vw]">
+            <div key={index} className=" w-[60vw]">
               <h3 className="border-t-2 pt-8 text-3xl font-serif ">
                 {experiance.title}
               </h3>

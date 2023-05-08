@@ -33,9 +33,10 @@ function SocialMedia() {
   return (
     <div className="flex  w-[30vw] gap-5 ml-[-2vw]">
       <section className=" flex gap-5 ">
-        {socialMedia.map((media) => {
+        {socialMedia.map((media, index) => {
           return (
             <a
+              key={index}
               href={media.link}
               className=" w-12 h-12 bg-slate-500 flex items-center justify-center rounded-full hvr-wobble-top hover:bg-[#7CFC00]"
             >

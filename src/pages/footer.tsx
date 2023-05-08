@@ -19,18 +19,15 @@ function Footer() {
 
   return (
     <div className="flex justify-center bg-slate-700 h-[100vh] p-6 flex-col">
-      <h3 className="w-[60vw] text-3xl text-slate-50 text-center">
-        I’m a designer, based in San Francisco. Currently a freelancer. You can
-        see my hobbies on @Jack-Co and some photos on me too
-      </h3>
       <main className="flex justify-around">
         <section className="flex flex-col gap-7">
           <h3 className=" mt-19 text-slate-50 font-bold tracking-wider text-xl">
             DROP A LINE
           </h3>
-          {inputContainer.map((input) => {
+          {inputContainer.map((input, index) => {
             return (
               <input
+                key={index}
                 className=" bg-transparent placeholder:text-slate-50 border-x-0 border-t-0 text-slate-50"
                 type={input.type}
                 placeholder={input.placheholder}
@@ -50,21 +47,18 @@ function Footer() {
         </section>
         <section className=" w-60 flex flex-col mt-20 text-slate-50">
           <h3 className="mb-10 font-bold tracking-wider text-xl">CONTACT ME</h3>
-          <a href="#" className="mb-5">
-            Erlenbacher Straße 8, 67659 Kaiserslautern
-          </a>
-          <a href="#" className="mb-5">
-            +4917680358387
-          </a>
-          <a href="#" className="mb-10">
+          <a href="/address">Erlenbacher Straße 8, 67659 Kaiserslautern</a>
+          <a href="tel:+4917680358387">+4917680358387</a>
+          <a href="mailto:karimovrizvan84@gmail.com">
             karimovrizvan84@gmail.com
           </a>
+
           <section className="mb-14">
             <a
-              className="border p-3 w-[20vw] hvr-radial-out"
+              className="border p-3 w-[20vw] mt-10 hvr-radial-out text-center"
               style={{ backgroundColor: 'transparent' }}
               download="Lebenslauf.pdf"
-              href="../resource/doc/Lebenslauf.pdf"
+              href="/Lebenslauf.pdf"
             >
               DOWNLOAD RESUME
             </a>

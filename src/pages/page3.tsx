@@ -36,9 +36,10 @@ function Page3() {
       <main className=" flex justify-around p-6">
         <div className=" w-[40vw] bg-slate-700">
           <ul className=" flex flex-col justify-center items-center py-10 text-[#fff] text-3xl">
-            {languages.map((language) => {
+            {languages.map((language, index) => {
               return (
                 <li
+                  key={index}
                   onClick={() => handleClick(language)}
                   className="mb-6 tracking-wider cursor-pointer font-serif text-slate-300 hover:text-[#fff] active:text-[#fff] hvr-underline-from-center pb-1"
                 >
