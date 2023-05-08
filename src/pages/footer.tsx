@@ -25,7 +25,7 @@ function Footer() {
       </h3>
       <main className="flex justify-around">
         <section className="flex flex-col gap-7">
-          <h3 className=" mt-21 text-slate-50 font-bold tracking-wider text-xl">
+          <h3 className=" mt-19 text-slate-50 font-bold tracking-wider text-xl">
             DROP A LINE
           </h3>
           {inputContainer.map((input) => {
