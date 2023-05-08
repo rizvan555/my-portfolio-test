@@ -4,16 +4,18 @@ import 'animate.css/animate.min.css';
 function Page6() {
   const experiances = [
     {
-      title: 'User Experience Designer',
-      date: 'March 2020 - Present',
+      uniName: 'SuperCode GmbH & Co. KG ',
+      title: 'Full Stack Development',
+      date: '01/2023 - 07/2023',
       contain:
-        'Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.',
+        'HTML5, CSS, SASS, Bootstrap, JavaScript, Git-Github, React JS, Node JS, Express JS, Mongo DB, Trello, VS Code, Figma',
     },
     {
-      title: 'UI Designer',
-      date: 'March 2020 - Present',
+      uniName: 'Baku Business University',
+      title: 'Wirtschaftsinformatik (Finans & Kredit)',
+      date: '09/2001 - 07/2005',
       contain:
-        'Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.',
+        ' Die Planung-Entwicklung und Umsetzung von IT-Systemen zur Unterstützung von Geschäftsprozessen / Die Analyse und Optimierung von Geschäftsprozessen durch den Einsatz von IT / Die Implementierung und Integration von Softwarelösungen in Unternehmen / Grundlagender Betriebswirtschaftslehre wie beispielsweise  Unternehmensführung, Rechnungswesen, Marketing und Personalwesen / Methoden und Techniken der Datenanalyse und Datenverarbeitung / Projektmanagement und Teamarbeit',
     },
   ];
   return (
@@ -30,9 +32,10 @@ function Page6() {
         {experiances.map((experiance) => {
           return (
             <div className=" w-[60vw]">
-              <h3 className="border-t-2 pt-8 text-3xl mb-4 font-serif">
-                {experiance.title}
-              </h3>
+              <h2 className="border-t-2 pt-8 text-4xl mb-4 font-serif">
+                {experiance.uniName}
+              </h2>
+              <h3 className="text-2xl mb-4 font-serif">{experiance.title}</h3>
               <span>{experiance.date}</span>
               <p className=" mt-4">{experiance.contain}</p>
             </div>
